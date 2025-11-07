@@ -6,4 +6,8 @@ public class IslandMap {
     public IslandMap(int row, int col) {
         this.cells = new Cell[row][col];
     }
+
+    public Cell[][] getCells() {
+        return cells;
+    }
 }
