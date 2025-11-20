@@ -19,11 +19,20 @@ public class IslandMap {
         return cells;
     }
 
+    public int getRows(){
+        return cells.length;
+    }
+
+    public int getColls() {
+        return cells[0].length;
+    }
+
     public Map<String, Integer> getAllStatistic() {
         return allStatistic;
     }
 
     public void updateStatistic() {
+        allStatistic.clear();
         for (Cell[] row : cells) {
             for (Cell cell : row) {
                 Map<String, List<Resident>> residents = cell.getResidents();

@@ -4,10 +4,7 @@ import com.javarush.island.parkhomenko.entyties.Animal;
 
 public abstract class Herbivorous extends Animal {
 
-    public Herbivorous() {
-    }
-
-    public Herbivorous(String name, String icon) {
-        super(name, icon);
+    public Herbivorous(String name, String icon, int maxStep, int maxCountInCell, double needFoodKg, double weight) {
+        super(name, icon, maxStep, maxCountInCell, needFoodKg, weight);
     }
 }

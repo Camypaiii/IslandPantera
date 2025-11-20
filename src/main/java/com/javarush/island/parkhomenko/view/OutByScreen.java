@@ -13,19 +13,21 @@ public class OutByScreen {
         this.cells = map.getCells();
     }
 
-    public void showMap(){
+    public void showMap() {
         for (Cell[] cell : cells) {
+            System.out.println("-".repeat(cells.length * 7 + 3));
             for (Cell value : cell) {
-                System.out.print(value + "\t");
+                System.out.printf("|%6s", value);
             }
-            System.out.println();
+            System.out.println("|");
         }
 
     }
 
-    public void showInfo(){
+    public void showInfo() {
         map.updateStatistic();
         System.out.println(map.getAllStatistic());
+        System.out.println();
 
     }
 
